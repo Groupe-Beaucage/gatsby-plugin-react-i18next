@@ -63,9 +63,11 @@ export const wrapPageElement = (
     if (typeof window !== 'undefined') {
       let detected =
         window.localStorage.getItem(LANGUAGE_KEY) ||
+        defaultLanguage ||
+        i18nextOptions.lng ||
         browserLang({
           languages,
-          fallback: fallbackLanguage || language
+          fallback: fallbackLanguage || language || i18nextOptions.lng
         });
 
       if (!languages.includes(detected)) {
