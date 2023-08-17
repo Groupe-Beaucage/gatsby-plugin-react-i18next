@@ -94,7 +94,10 @@ export const wrapPageElement = (
       }
     }
   } else {
-    window.localStorage.setItem(LANGUAGE_KEY, language);
+    // Skip build, Browsers only
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem(LANGUAGE_KEY, language);
+    }
   }
 
   const localeNodes: Array<{node: LocaleNode}> = data?.[localeJsonNodeName]?.edges || [];
