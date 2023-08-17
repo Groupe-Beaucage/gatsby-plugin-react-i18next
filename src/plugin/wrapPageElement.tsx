@@ -74,6 +74,10 @@ export const wrapPageElement = (
         detected = language;
       }
 
+      if (window.location.pathname === '/') {
+        detected = defaultLanguage;
+      }
+
       window.localStorage.setItem(LANGUAGE_KEY, detected);
 
       if (detected !== defaultLanguage) {
@@ -89,6 +93,8 @@ export const wrapPageElement = (
         return null;
       }
     }
+  } else {
+    window.localStorage.setItem(LANGUAGE_KEY, language);
   }
 
   const localeNodes: Array<{node: LocaleNode}> = data?.[localeJsonNodeName]?.edges || [];
