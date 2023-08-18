@@ -4,7 +4,6 @@
   "description": "Easily translate your Gatsby website into multiple languages",
   "main": "index.js",
   "types": "index.d.ts",
-  "private": true,
   "author": "Dmitriy Nevzorov <dmitriy.nevzorov@microapps.com>",
   "license": "MIT",
   "keywords": [
