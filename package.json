@@ -1,9 +1,10 @@
 {
   "name": "@autoroot/gatsby-plugin-react-i18next",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Easily translate your Gatsby website into multiple languages",
   "main": "index.js",
   "types": "index.d.ts",
+  "private": true,
   "author": "Dmitriy Nevzorov <dmitriy.nevzorov@microapps.com>",
   "license": "MIT",
   "keywords": [
@@ -23,7 +24,7 @@
     "translate"
   ],
   "repository": {
-    "url": "https://github.com/microapps/gatsby-plugin-react-i18next"
+    "url": "https://github.com/Groupe-Beaucage/gatsby-plugin-react-i18next"
   },
   "files": [
     "dist",

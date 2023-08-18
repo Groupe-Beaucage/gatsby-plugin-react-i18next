@@ -74,7 +74,7 @@ export const wrapPageElement = (
         detected = language;
       }
 
-      if (window.location.pathname === '/') {
+      if (!languages.some((lang) => window.location.pathname.startsWith(`/${lang}/`))) {
         detected = defaultLanguage;
       }
 
